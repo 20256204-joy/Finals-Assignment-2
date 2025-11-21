@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New York</title>
+<style>
+:root{
+  --accent-blue:#0b409c;
+  --accent-yellow:#ffcd00;
+  --bg:#fff;
+  --card-bg:#fff;
+  --muted:#666;
+}
+*{box-sizing:border-box;}
+body {
+  font-family: Arial, sans-serif;
+  margin:0;
+  padding:0;
+  background:var(--bg);
+  color:#333;
+}
+header {
+  background: linear-gradient(to right, var(--accent-blue), var(--accent-yellow));
+  color:white;
+  text-align:center;
+  padding:25px 0;
+  position:relative;
+}
+header h1 { margin:0; }
+.back-btn {
+  position:absolute;
+  top:10px;
+  left:10px;
+  padding:10px 18px;
+  background:var(--accent-blue);
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+  transition:0.3s;
+}
+.back-btn:hover { background:var(--accent-yellow); color:#333;}
+
+main { display:flex; flex-direction:column; align-items:center; padding:20px; }
+article { max-width:1000px; width:100%; margin:16px 0; padding:18px; border:1px solid #ccc; border-radius:10px; background:var(--card-bg);}
+article h2 { color:var(--accent-blue); margin-bottom:16px; }
+.place-table { width:100%; border-collapse: collapse; margin:12px 0;}
+.place-table td { vertical-align: top; padding:12px;}
+.place-table .text { width:55%;}
+.place-table .image { width:45%;}
+.place-table img { width:100%; max-height:300px; object-fit:cover; border-radius:10px; border:1px solid #ececec; display:block;}
+.img-caption { text-align:center; font-size:0.85rem; color:#666; margin-top:6px; }
+.btn { display:inline-block; margin-top:12px; padding:8px 12px; background:var(--accent-blue); color:#fff; text-decoration:none; border-radius:6px; font-weight:600;}
+.btn:hover { background:var(--accent-yellow); color:#333; }
+table { border-collapse: collapse; width:100%; margin-top:12px;}
+table th, table td { padding:8px; border:1px solid #ccc; text-align:left;}
+.hr { border-top:1px dashed #e9e9e9; margin:16px 0; }
+
+@media(max-width:880px){
+  .place-table, .place-table tr, .place-table td { display:block; width:100%; }
+  .place-table td { padding:6px 0; }
+}
+</style>
+</head>
+<body>
+<header>
+  <a href="index.html" class="back-btn">Back to Menu</a>
+  <h1>New York</h1>
+</header>
+
+<main>
+
+<!-- HISTORY -->
+<article>
+<h2>History</h2>
+<table class="place-table">
+<tr>
+<td class="text">
+<p>New York was inhabited by Iroquois and Algonquin peoples, colonized by the Dutch, became a British colony, and later a key state in US history. NYC grew into a global hub for commerce, culture, and innovation.</p>
+</td>
+<td class="image">
+<img src="image/new york/flag.png" alt="New York Flag">
+<div class="img-caption">New York State Flag</div>
+</td>
+</tr>
+</table>
+</article>
+
+<!-- FAMOUS PLACES -->
+<article>
+<h2>Famous Places</h2>
+
+<table class="place-table">
+<tr>
+<td class="text">
+<h3>Statue of Liberty</h3>
+<p>The Statue of Liberty is a universal symbol of freedom, gifted by France in 1886. It stands on Liberty Island in New York Harbor and is a major tourist attraction.</p>
+<a class="btn" href="https://www.nps.gov/stli/index.htm" target="_blank">Visit Statue of Liberty</a>
+</td>
+<td class="image">
+<img src="image/new york/Statue of Liberty.png" alt="Statue of Liberty">
+<div class="img-caption">Statue of Liberty</div>
+</td>
+</tr>
+</table>
+
+<div class="hr"></div>
+
+<table class="place-table">
+<tr>
+<td class="text">
+<h3>Times Square</h3>
+<p>Times Square is the heart of Manhattan, famous for its neon lights, Broadway theaters, and bustling crowds. It is a major center for entertainment and tourism.</p>
+<a class="btn" href="https://www.timessquarenyc.org/" target="_blank">Visit Times Square</a>
+</td>
+<td class="image">
+<img src="image/new york/Times Square.png" alt="Times Square">
+<div class="img-caption">Times Square</div>
+</td>
+</tr>
+</table>
+
+<div class="hr"></div>
+
+<table class="place-table">
+<tr>
+<td class="text">
+<h3>Niagara Falls</h3>
+<p>Niagara Falls is a group of three waterfalls straddling the U.S.-Canada border. Known for its breathtaking views and hydroelectric power, it attracts millions of visitors annually.</p>
+<a class="btn" href="https://www.niagarafallsstatepark.com/" target="_blank">Visit Niagara Falls</a>
+</td>
+<td class="image">
+<img src="image/new york/Niagara Falls.png" alt="Niagara Falls">
+<div class="img-caption">Niagara Falls</div>
+</td>
+</tr>
+</table>
+</article>
+
+<!-- FOODS -->
+<article>
+<h2>Famous Foods</h2>
+<table class="place-table">
+<tr>
+<td class="text">
+<ul>
+<li>New York Pizza – Thin, large slices famous worldwide.</li>
+<li>Bagels with Lox – Traditional breakfast with cream cheese and smoked salmon.</li>
+<li>Cheesecake – Rich dessert with a creamy texture, originating in NYC.</li>
+</ul>
+</td>
+<td class="image">
+<img src="image/new york/ny pizza.png" alt="New York Pizza"><div class="img-caption">New York Pizza</div>
+<img src="image/new york/Bagels with Lox.png" alt="Bagels with Lox"><div class="img-caption">Bagels with Lox</div>
+<img src="image/new york/Cheesecake.png" alt="Cheesecake"><div class="img-caption">Cheesecake</div>
+</td>
+</tr>
+</table>
+</article>
+
+<!-- BEACHES -->
+<article>
+<h2>Famous Beaches</h2>
+<table class="place-table">
+<tr>
+<td class="text">
+<ul>
+<li>Coney Island – Historic amusement parks and boardwalk along the Atlantic.</li>
+<li>Jones Beach – Popular for swimming, fishing, and concerts.</li>
+<li>Robert Moses State Park – Offers beaches, nature trails, and water activities.</li>
+</ul>
+</td>
+<td class="image">
+<img src="image/new york/coney island.png" alt="Coney Island"><div class="img-caption">Coney Island</div>
+<img src="image/new york/Jones Beach.png" alt="Jones Beach"><div class="img-caption">Jones Beach</div>
+<img src="image/new york/Robert Moses State Park.png" alt="Robert Moses State Park"><div class="img-caption">Robert Moses State Park</div>
+</td>
+</tr>
+</table>
+</article>
+
+<!-- ARTISTS & MOVIES -->
+<article>
+<h2>Famous Artists & Celebrities</h2>
+
+<table class="place-table">
+<tr>
+<td class="text">
+<h3>Jay-Z</h3>
+<p>Jay-Z, born Shawn Carter in Brooklyn, NY, is a legendary rapper, businessman, and cultural icon known worldwide.</p>
+</td>
+<td class="image">
+<img src="image/new york/Jay-Z.png" alt="Jay-Z">
+<div class="img-caption">Jay-Z</div>
+</td>
+</tr>
+</table>
+
+<div class="hr"></div>
+
+<table class="place-table">
+<tr>
+<td class="text">
+<h3>Lady Gaga</h3>
+<p>Lady Gaga, born Stefani Germanotta in Manhattan, NY, is a singer, songwriter, and actress known for her versatility and bold performances.</p>
+</td>
+<td class="image">
+<img src="image/new york/lady gaga.png" alt="Lady Gaga">
+<div class="img-caption">Lady Gaga</div>
+</td>
+</tr>
+</table>
+
+<div class="hr"></div>
+
+<table class="place-table">
+<tr>
+<td class="text">
+<h3>Andy Warhol</h3>
+<p>Andy Warhol, a leading figure of the pop art movement, was born in Pittsburgh but gained fame in New York City for his innovative art and studio, The Factory.</p>
+</td>
+<td class="image">
+<img src="image/new york/Andy Warhol.png" alt="Andy Warhol">
+<div class="img-caption">Andy Warhol</div>
+</td>
+</tr>
+</table>
+
+<div class="hr"></div>
+
+<h3>Movies Filmed in New York</h3>
+<table>
+<tr><th>Movie</th><th>Description</th></tr>
+<tr><td>The Godfather</td><td>Crime movie filmed in NYC</td></tr>
+<tr><td>Home Alone 2</td><td>Set around NYC landmarks</td></tr>
+<tr><td>Breakfast at Tiffany's</td><td>Manhattan lifestyle</td></tr>
+</table>
+</article>
+
+</main>
+</body>
+</html>

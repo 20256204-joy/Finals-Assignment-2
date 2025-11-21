@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>California</title>
+<style>
+:root{
+  --accent-yellow:#ffcc00;
+  --accent-blue:#1b75bc;
+  --bg:#fff;
+  --card-bg:#f9f9f9;
+  --muted:#666;
+}
+*{box-sizing:border-box;}
+body {
+  font-family: Arial, sans-serif;
+  margin:0;
+  padding:0;
+  background:var(--bg);
+  color:#333;
+}
+header {
+  background: linear-gradient(to right, var(--accent-yellow), var(--accent-blue));
+  color:white;
+  text-align:center;
+  padding:25px 0;
+  position:relative;
+}
+header h1 { margin:0; }
+.back-btn {
+  position:absolute;
+  top:10px;
+  left:10px;
+  padding:10px 18px;
+  background:var(--accent-blue);
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+  transition:0.3s;
+}
+.back-btn:hover { background:var(--accent-yellow); color:#333;}
+
+main { display:flex; flex-direction:column; align-items:center; padding:20px; }
+article { max-width:1000px; width:100%; margin:16px 0; padding:18px; border:1px solid #ccc; border-radius:10px; background:var(--card-bg);}
+article h2 { color:var(--accent-blue); margin-bottom:16px; }
+.place-table { width:100%; border-collapse: collapse; margin:12px 0;}
+.place-table td { vertical-align: top; padding:12px;}
+.place-table .text { width:55%;}
+.place-table .image { width:45%;}
+.place-table img { width:100%; max-height:300px; object-fit:cover; border-radius:10px; border:1px solid #ececec; display:block;}
+.img-caption { text-align:center; font-size:0.85rem; color:#666; margin-top:6px; }
+.btn { display:inline-block; margin-top:12px; padding:8px 12px; background:var(--accent-blue); color:#fff; text-decoration:none; border-radius:6px; font-weight:600;}
+.btn:hover { background:var(--accent-yellow); color:#fff; }
+table { border-collapse: collapse; width:100%; margin-top:12px;}
+table th, table td { padding:8px; border:1px solid #ccc; text-align:left;}
+.hr { border-top:1px dashed #e9e9e9; margin:16px 0; }
+
+@media(max-width:880px){
+  .place-table, .place-table tr, .place-table td { display:block; width:100%; }
+  .place-table td { padding:6px 0; }
+}
+</style>
+</head>
+<body>
+<header>
+  <a href="index.html" class="back-btn">Back to Menu</a>
+  <h1>California</h1>
+</header>
+
+<main>
+
+<!-- HISTORY -->
+<article>
+<h2>History</h2>
+<table class="place-table">
+<tr>
+<td class="text">
+<p>California was colonized by the Spanish in the 18th century, became part of Mexico, and joined the US in 1850. The Gold Rush of 1849 transformed its economy and population. Today, California is a hub for entertainment, technology, and agriculture, with iconic locations like Hollywood and Silicon Valley.</p>
+</td>
+<td class="image">
+<img src="image/california/flag.png" alt="California Flag">
+<div class="img-caption">California State Flag</div>
+</td>
+</tr>
+</table>
+</article>
+
+<!-- FAMOUS PLACES -->
+<article>
+<h2>Famous Places</h2>
+
+<table class="place-table">
+<tr>
+<td class="text">
+<h3>Hollywood, Los Angeles</h3>
+<p>Hollywood is the heart of the American film industry, home to studios, theaters, and the iconic Hollywood Walk of Fame. Visitors can explore Universal Studios and Hollywood Boulevard.</p>
+<a class="btn" href="https://www.visitcalifornia.com/experience/hollywood-los-angeles" target="_blank">Visit Hollywood</a>
+</td>
+<td class="image">
+<img src="image/california/hollywood.png" alt="Hollywood">
+<div class="img-caption">Hollywood, Los Angeles</div>
+</td>
+</tr>
+</table>
+
+<div class="hr"></div>
+
+<table class="place-table">
+<tr>
+<td class="text">
+<h3>Yosemite National Park</h3>
+<p>Yosemite is famous for its towering granite cliffs, waterfalls, giant sequoias, and scenic hiking trails. It attracts nature lovers, climbers, and photographers worldwide.</p>
+<a class="btn" href="https://www.nps.gov/yose/index.htm" target="_blank">Visit Yosemite</a>
+</td>
+<td class="image">
+<img src="image/california/yosemite.png" alt="Yosemite National Park">
+<div class="img-caption">Yosemite National Park</div>
+</td>
+</tr>
+</table>
+
+<div class="hr"></div>
+
+<table class="place-table">
+<tr>
+<td class="text">
+<h3>Golden Gate Bridge</h3>
+<p>The Golden Gate Bridge in San Francisco is an architectural marvel and an international symbol of California. Visitors enjoy walking, biking, and photography along its spans.</p>
+<a class="btn" href="https://www.goldengate.org/" target="_blank">Visit Golden Gate Bridge</a>
+</td>
+<td class="image">
+<img src="image/california/golden gate bridge.png" alt="Golden Gate Bridge">
+<div class="img-caption">Golden Gate Bridge</div>
+</td>
+</tr>
+</table>
+</article>
+
+<!-- FOODS -->
+<article>
+<h2>Famous Foods</h2>
+<table class="place-table">
+<tr>
+<td class="text">
+<ul>
+<li>Avocado Toast – Fresh California avocados on toasted bread.</li>
+<li>Sourdough Bread – Famous in San Francisco for its tangy flavor.</li>
+<li>Fish Tacos – Popular coastal dish made with fresh seafood.</li>
+</ul>
+</td>
+<td class="image">
+<img src="image/california/avocado toast.png" alt="Avocado Toast"><div class="img-caption">Avocado Toast</div>
+<img src="image/california/Sourdough Bread.png" alt="Sourdough Bread"><div class="img-caption">Sourdough Bread</div>
+<img src="image/california/Fish Tacos.png" alt="Fish Tacos"><div class="img-caption">Fish Tacos</div>
+</td>
+</tr>
+</table>
+</article>
+
+<!-- BEACHES -->
+<article>
+<h2>Famous Beaches</h2>
+<table class="place-table">
+<tr>
+<td class="text">
+<ul>
+<li>Santa Monica Beach – Iconic pier, sandy beaches, and lively boardwalk.</li>
+<li>Venice Beach – Eclectic atmosphere with street performers and skateparks.</li>
+<li>Malibu Beach – Picturesque coastline with celebrity homes and surfing spots.</li>
+</ul>
+</td>
+<td class="image">
+<img src="image/california/Santa Monica beach.png" alt="Santa Monica Beach"><div class="img-caption">Santa Monica Beach</div>
+<img src="image/california/Venice Beach.png" alt="Venice Beach"><div class="img-caption">Venice Beach</div>
+<img src="image/california/malibu.png" alt="Malibu Beach"><div class="img-caption">Malibu Beach</div>
+</td>
+</tr>
+</table>
+</article>
+
+<!-- ARTISTS & MOVIES -->
+<article>
+<h2>Famous Artists & Celebrities</h2>
+
+<table class="place-table">
+<tr>
+<td class="text">
+<h3>Walt Disney</h3>
+<p>Walt Disney, animation pioneer and founder of Disney Studios, revolutionized entertainment. Disneyland in California remains a landmark for family attractions.</p>
+</td>
+<td class="image">
+<img src="image/california/Walt Disney.png" alt="Walt Disney">
+<div class="img-caption">Walt Disney</div>
+</td>
+</tr>
+</table>
+
+<div class="hr"></div>
+
+<table class="place-table">
+<tr>
+<td class="text">
+<h3>Tom Hanks</h3>
+<p>Tom Hanks, born in Concord, California, is an acclaimed actor known for films such as Forrest Gump, Saving Private Ryan, and Cast Away.</p>
+</td>
+<td class="image">
+<img src="image/california/Tom Hanks.png" alt="Tom Hanks">
+<div class="img-caption">Tom Hanks</div>
+</td>
+</tr>
+</table>
+
+<div class="hr"></div>
+
+<table class="place-table">
+<tr>
+<td class="text">
+<h3>Dr. Dre</h3>
+<p>Dr. Dre, hip-hop icon from Compton, California, is a producer, rapper, and entrepreneur, credited with shaping West Coast hip-hop culture.</p>
+</td>
+<td class="image">
+<img src="image/california/Dr Dre.png" alt="Dr. Dre">
+<div class="img-caption">Dr. Dre</div>
+</td>
+</tr>
+</table>
+
+<div class="hr"></div>
+
+<h3>Movies/Shows Filmed in California</h3>
+<table>
+<tr><th>Movie/Show</th><th>Description</th></tr>
+<tr><td>La La Land</td><td>Musical celebrating Los Angeles</td></tr>
+<tr><td>Jurassic Park</td><td>Filmed in various California landscapes</td></tr>
+<tr><td>Forrest Gump</td><td>Scenes shot in multiple California locations</td></tr>
+</table>
+</article>
+
+</main>
+</body>
+</html>

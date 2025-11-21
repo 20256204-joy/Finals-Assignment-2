@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Texas</title>
+<style>
+:root{
+  --accent-red:#bf0a30;
+  --accent-blue:#002868;
+  --bg:#fff;
+  --card-bg:#fff;
+  --muted:#666;
+}
+*{box-sizing:border-box;}
+body {
+  font-family: Arial, sans-serif;
+  margin:0;
+  padding:0;
+  background:var(--bg);
+  color:#333;
+}
+header {
+  background: var(--accent-blue);
+  color:white;
+  text-align:center;
+  padding:25px 0;
+  position:relative;
+}
+header h1 { margin:0; }
+.back-btn {
+  position:absolute;
+  top:10px;
+  left:10px;
+  padding:10px 18px;
+  background:var(--accent-blue);
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+  transition:0.3s;
+}
+.back-btn:hover { background:var(--accent-red); }
+
+main { display:flex; flex-direction:column; align-items:center; padding:20px; }
+article { max-width:1000px; width:100%; margin:16px 0; padding:18px; border:1px solid #ccc; border-radius:10px; background:var(--card-bg);}
+article h2 { color:var(--accent-blue); margin-bottom:16px; }
+.place-table { width:100%; border-collapse: collapse; margin:12px 0;}
+.place-table td { vertical-align: top; padding:12px;}
+.place-table .text { width:55%;}
+.place-table .image { width:45%;}
+.place-table img { width:100%; max-height:300px; object-fit:cover; border-radius:10px; border:1px solid #ececec; display:block;}
+.img-caption { text-align:center; font-size:0.85rem; color:#666; margin-top:6px; }
+.btn { display:inline-block; margin-top:12px; padding:8px 12px; background:var(--accent-blue); color:#fff; text-decoration:none; border-radius:6px; font-weight:600;}
+.btn:hover { background:var(--accent-red);}
+table { border-collapse: collapse; width:100%; margin-top:12px;}
+table th, table td { padding:8px; border:1px solid #ccc; text-align:left;}
+.hr { border-top:1px dashed #e9e9e9; margin:16px 0; }
+
+@media(max-width:880px){
+  .place-table, .place-table tr, .place-table td { display:block; width:100%; }
+  .place-table td { padding:6px 0; }
+}
+</style>
+</head>
+<body>
+<header>
+  <a href="index.html" class="back-btn">Back to Menu</a>
+  <h1>Texas</h1>
+</header>
+
+<main>
+
+<!-- HISTORY -->
+<article>
+<h2>History</h2>
+<table class="place-table">
+<tr>
+<td class="text">
+<p>Texas was home to Native American tribes, colonized by Spain, became part of Mexico, then an independent Republic in 1836, and joined the United States in 1845.</p>
+<p>Known for ranching, oil, and cowboy culture, Texas is now an economic and cultural powerhouse in the U.S.</p>
+</td>
+<td class="image">
+<img src="image/texas/flag.png" alt="Texas Flag">
+<div class="img-caption">Texas Flag</div>
+</td>
+</tr>
+</table>
+</article>
+
+<!-- FAMOUS PLACES -->
+<article>
+<h2>Famous Places</h2>
+
+<table class="place-table">
+<tr>
+<td class="text">
+<h3>The Alamo, San Antonio</h3>
+<p>The Alamo is a historic Spanish mission and fortress compound in San Antonio. It is famed for the 1836 battle during the Texas Revolution and is a symbol of Texas bravery and independence.</p>
+<a class="btn" href="https://www.thealamo.org/" target="_blank">Visit The Alamo</a>
+</td>
+<td class="image">
+<img src="image/texas/alamo.png" alt="The Alamo">
+<div class="img-caption">The Alamo — San Antonio</div>
+</td>
+</tr>
+</table>
+
+<div class="hr"></div>
+
+<table class="place-table">
+<tr>
+<td class="text">
+<h3>Space Center Houston</h3>
+<p>Space Center Houston is the official visitor center of NASA's Johnson Space Center. Visitors can see historic spacecraft, meet astronauts, and explore the history and future of space exploration.</p>
+<a class="btn" href="https://spacecenter.org/" target="_blank">Visit Space Center</a>
+</td>
+<td class="image">
+<img src="image/texas/space center houston.png" alt="Space Center Houston">
+<div class="img-caption">Space Center Houston</div>
+</td>
+</tr>
+</table>
+
+<div class="hr"></div>
+
+<table class="place-table">
+<tr>
+<td class="text">
+<h3>Big Bend National Park</h3>
+<p>Big Bend National Park is located along the Rio Grande in West Texas. It is famous for its vast desert landscapes, canyons, mountains, and diverse wildlife. Hiking, camping, and stargazing are popular activities here.</p>
+<a class="btn" href="https://www.nps.gov/bibe/index.htm" target="_blank">Visit Big Bend</a>
+</td>
+<td class="image">
+<img src="image/texas/big bend national park.png" alt="Big Bend National Park">
+<div class="img-caption">Big Bend National Park</div>
+</td>
+</tr>
+</table>
+</article>
+
+<!-- FOODS -->
+<article>
+<h2>Famous Foods</h2>
+<table class="place-table">
+<tr>
+<td class="text">
+<ul>
+<li>Texas BBQ – Brisket and smoked meats, a cultural staple of Texas cuisine.</li>
+<li>Chili – Spicy stew with meat and beans, often cooked in large gatherings.</li>
+<li>Tex-Mex Tacos – Fusion of Mexican flavors with Texas ingredients.</li>
+</ul>
+</td>
+<td class="image">
+<img src="image/texas/bbq.png" alt="Texas BBQ"><div class="img-caption">Texas BBQ</div>
+<img src="image/texas/chill spicy stew.png" alt="Chili – Spicy stew"><div class="img-caption">Chili</div>
+<img src="image/texas/tex mex tacos.png" alt="Tex-Mex Tacos"><div class="img-caption">Tex-Mex Tacos</div>
+</td>
+</tr>
+</table>
+</article>
+
+<!-- BEACHES -->
+<article>
+<h2>Famous Beaches</h2>
+<table class="place-table">
+<tr>
+<td class="text">
+<ul>
+<li>South Padre Island – Known for its long sandy beaches and warm Gulf waters.</li>
+<li>Galveston Beach – Popular for family-friendly activities and historic piers.</li>
+<li>Corpus Christi Beach – Offers water sports and coastal attractions.</li>
+</ul>
+</td>
+<td class="image">
+<img src="image/texas/south padre.png" alt="South Padre Island"><div class="img-caption">South Padre Island</div>
+<img src="image/texas/galveeston beach.png" alt="Galveston Beach"><div class="img-caption">Galveston Beach</div>
+<img src="image/texas/corpus christi beach.png" alt="Corpus Christi Beach"><div class="img-caption">Corpus Christi Beach</div>
+</td>
+</tr>
+</table>
+</article>
+
+<!-- ARTISTS & MOVIES -->
+<article>
+<h2>Famous Artists & Celebrities</h2>
+
+<table class="place-table">
+<tr>
+<td class="text">
+<h3>Selena Quintanilla</h3>
+<p>Selena, known as the "Queen of Tejano music," was born in Lake Jackson, Texas. Her influence on music, fashion, and Latin culture remains legendary.</p>
+</td>
+<td class="image">
+<img src="image/texas/Selena Quintanilla – Tejano.png" alt="Selena Quintanilla">
+<div class="img-caption">Selena Quintanilla</div>
+</td>
+</tr>
+</table>
+
+<div class="hr"></div>
+
+<table class="place-table">
+<tr>
+<td class="text">
+<h3>Willie Nelson</h3>
+<p>Willie Nelson is a Texas-born country musician known worldwide for his outlaw country style, songwriting, and activism.</p>
+</td>
+<td class="image">
+<img src="image/texas/Willie Nelson – Country musician.png" alt="Willie Nelson">
+<div class="img-caption">Willie Nelson</div>
+</td>
+</tr>
+</table>
+
+<div class="hr"></div>
+
+<table class="place-table">
+<tr>
+<td class="text">
+<h3>Janis Joplin</h3>
+<p>Janis Joplin, from Port Arthur, Texas, was a legendary rock singer known for her powerful voice and iconic performances in the 1960s.</p>
+</td>
+<td class="image">
+<img src="image/texas/Janis Joplin – Rock.png" alt="Janis Joplin">
+<div class="img-caption">Janis Joplin</div>
+</td>
+</tr>
+</table>
+
+<div class="hr"></div>
+
+<h3>Movies Filmed in Texas</h3>
+<table>
+<tr><th>Movie</th><th>Description</th></tr>
+<tr><td>Friday Night Lights</td><td>Football culture in Texas.</td></tr>
+<tr><td>No Country for Old Men</td><td>West Texas landscapes.</td></tr>
+<tr><td>Dallas Buyers Club</td><td>True story based in Texas.</td></tr>
+</table>
+
+</article>
+
+</main>
+</body>
+</html>
